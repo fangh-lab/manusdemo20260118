@@ -1,0 +1,44 @@
+# LLM配置
+[llm]
+model = "deepseek-chat"                              # 模型名称
+base_url = "https://api.deepseek.com/v1"             # API基础URL（注意：需要包含/v1路径）
+api_key = "sk-01a68f3f297f4a1a820de22c4aca536b"      # 请替换为你的API密钥
+max_tokens = 8192                                   # 最大token数
+temperature = 0.7                                   # 温度参数
+api_type = "openai"                                 # API类型: openai, azure, ollama, anthropic
+
+
+
+
+# Azure OpenAI配置示例（取消注释以使用）
+# [llm]
+# api_type = "azure"
+# model = "YOUR_MODEL_NAME"
+# base_url = "{YOUR_AZURE_ENDPOINT}/openai/deployments/{DEPLOYMENT_ID}"
+# api_key = "YOUR_AZURE_API_KEY"
+# api_version = "2024-08-01-preview"
+# max_tokens = 4096
+# temperature = 0.7
+
+# Ollama配置示例（取消注释以使用）
+# [llm]
+# api_type = "ollama"
+# model = "llama3.2"
+# base_url = "http://localhost:11434/v1"
+# api_key = "ollama"
+# max_tokens = 4096
+# temperature = 0.7
+
+# Anthropic配置示例（取消注释以使用）
+# [llm]
+# api_type = "anthropic"
+# model = "claude-3-5-sonnet-20241022"
+# base_url = "https://api.anthropic.com"
+# api_key = "YOUR_ANTHROPIC_API_KEY"
+# max_tokens = 8192
+# temperature = 0.7
+
+# 浏览器配置（可选）
+[browser]
+headless = false                                    # 是否无头模式（true=不显示浏览器窗口）
+disable_security = true                             # 是否禁用安全特性
