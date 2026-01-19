@@ -2,7 +2,7 @@
 [llm]
 model = "deepseek-chat"                              # 模型名称
 base_url = "https://api.deepseek.com/v1"             # API基础URL（注意：需要包含/v1路径）
-api_key = "sk-01a68f3f297f4a1a820de22c4aca536b"      # 请替换为你的API密钥
+api_key = "your key"      # 请替换为你的API密钥
 max_tokens = 8192                                   # 最大token数
 temperature = 0.7                                   # 温度参数
 api_type = "openai"                                 # API类型: openai, azure, ollama, anthropic
