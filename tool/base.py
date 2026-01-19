@@ -1,4 +1,7 @@
 """工具基类"""
+
+from __future__ import annotations
+
 from abc import ABC, abstractmethod
 from typing import Any, Dict, Optional
 
@@ -7,6 +10,7 @@ from pydantic import BaseModel, ConfigDict
 
 class ToolResult(BaseModel):
     """工具执行结果"""
+
     output: Optional[str] = None
     error: Optional[str] = None
 
@@ -16,6 +20,7 @@ class ToolResult(BaseModel):
 
 class BaseTool(ABC, BaseModel):
     """工具基类"""
+
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     name: str

@@ -3,3 +3,8 @@ openai>=1.0.0
 browser-use>=0.1.40
 tomli>=2.0.0
 anthropic>=0.40.0
+
+# 新增依赖（用于新工具）
+psutil>=5.9.0        # 系统信息工具需要
+aiohttp>=3.9.0       # HTTP工具需要
+jsonpath-ng>=1.6.0   # JSON处理工具需要
